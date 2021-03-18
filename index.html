@@ -436,7 +436,12 @@
              <!-- product 1 -->
     <article class="product">
         <div class="product__imgbox">
-          <img class="product__img" src="/img/shop-item-desk1.jpg" alt="Превью товара">
+        <picture class="product__img">
+          <source srcset="/img/shop-item-desk1.jpg" type="image/jpeg" media="(min-width: 1200px)">
+          <source srcset="/img/shop-item-tablet1.jpg" type="image/jpeg" media="(min-width: 641px) and (max-width: 1199px)">
+          <source srcset="/img/shop-item-mobile1.jpg" type="image/jpeg" media="(max-width: 640px)">
+          <img class="product__img" src="/img/shop-item-desk1.jpg" alt="Подушки на диван">
+        </picture>
         </div>
         <div class="product__body">
           <div class="product__content">
@@ -464,8 +469,13 @@
                       <!-- product 2 -->
       <article class="product">
         <div class="product__imgbox">
-          <img class="product__img" src="/img/shop-item-desk2.jpg" alt="Превью товара">
-        </div>
+          <picture class="product__img">
+            <source srcset="/img/shop-item-desk2.jpg" type="image/jpeg" media="(min-width: 1200px)">
+            <source srcset="/img/shop-item-tablet2.jpg" type="image/jpeg" media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="/img/shop-item-mobile2.jpg" type="image/jpeg" media="(max-width: 640px)">
+              <img class="product__img" src="/img/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+          </picture>
+         </div>
         <div class="product__body">
           <div class="product__content">
             <h3 class="product__title">Кукла «Зайчик»</h3>
@@ -492,7 +502,12 @@
                       <!-- product 3 -->
       <article class="product">
         <div class="product__imgbox">
-          <img class="product__img" src="/img/shop-item-desk3.jpg" alt="Превью товара">
+          <picture class="product__img">
+            <source srcset="/img/shop-item-desk3.jpg" type="image/jpeg" media="(min-width: 1200px)">
+            <source srcset="/img/shop-item-tablet3.jpg" type="image/jpeg" media="(min-width: 641px) and (max-width: 1199px)">
+            <source srcset="/img/shop-item-mobile3.jpg" type="image/jpeg" media="(max-width: 640px)">
+              <img class="product__img" src="/img/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+          </picture>
         </div>
         <div class="product__body">
           <div class="product__content">
