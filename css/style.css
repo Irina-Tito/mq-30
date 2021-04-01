@@ -28,7 +28,7 @@ body {
 
 @media (min-width: 1200px) {
   .header {
-    background: url("/img/banner-bg.jpg") no-repeat;
+    background: url("../img/banner-bg.jpg") no-repeat;
   }
 
   .logotip {
@@ -94,12 +94,6 @@ body {
       
   } 
 
-  .main-block {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
-
   .main-block-news{
     font-size: 15px;
     line-height: 22px;
@@ -135,7 +129,7 @@ body {
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .header {
-    background: url("/img/banner-bg-tablet.jpg") no-repeat;
+    background: url("../img/banner-bg-tablet.jpg") no-repeat;
     max-width: 1199px;
   }
 
@@ -147,8 +141,6 @@ body {
     width: 150px;
     padding: 20px;
   }
-
-
     
   .trends {
     display: flex;
@@ -178,7 +170,6 @@ body {
   } 
 
   .trend1, .trend2, .trend3, .trend4 {
-    box-sizing: border-box;
     max-width: 50%;
   }
       
@@ -201,11 +192,10 @@ body {
 
   .main-block {
     flex-direction: column;
-    margin-bottom: 4%;
     box-sizing: border-box;
-    max-width: 381px;
-    
-    border-bottom: #eeeeee solid 1px;
+    width: 381px;
+    /* это чтобы текст не сьезжал по ширине относительно картинки 381px */
+    border-bottom: #8d1919 solid 1px;
         
   }
 
@@ -240,11 +230,6 @@ body {
     line-height: 20px;
   }
 
-  .main-block {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 60px;
-  }
 
   .aside-block {
     width: 275px;
@@ -323,7 +308,7 @@ body {
 
 @media (max-width: 640px) {
   .header {
-    background: url("/img/banner-mobile.jpg") no-repeat;
+    background: url("../img/banner-mobile.jpg") no-repeat;
     max-width: 640px;
     
   }
@@ -351,12 +336,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-   margin-bottom: 45px;
+    margin-bottom: 45px;
   }
 
   .trend1, .trend2, .trend3, .trend4 {
-    box-sizing: border-box;
-    max-width: 100%;
+    width: 100%;
   }
   
   .trend-block{
@@ -392,12 +376,10 @@ body {
 
 
   .main-block {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
     max-width: 350px;
     min-width: 320px;
-    margin-bottom: 60px;
+   
     margin-left: auto;
     margin-right: auto;
   }
@@ -573,30 +555,33 @@ body {
   .trend1, .trend2, .trend3, .trend4 {
     position: relative;
     z-index: -1;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .trend1 {
-    background: url("/img/trend1.jpg") no-repeat;
-    background-size: cover;
-    width: calc(49%-5px);
- }
+    background: url("../img/trend1.jpg") no-repeat;
+      background-size: cover;
+  }
+    
 
   .trend2 {
-    background: url("/img/trend2.jpg") no-repeat;
+    background: url("../img/trend2.jpg") no-repeat;
     background-size: cover;
-    width: calc(49%-5px);
+    
   }
 
   .trend3 {
-    background: url("/img/trend3.jpg") no-repeat;
+    background: url("../img/trend3.jpg") no-repeat;
     background-size: cover;
-    width: calc(49%-5px);
+    
   }
 
   .trend4 {
-    background: url("/img/trend4.jpg") no-repeat;
+    background: url("../img/trend4.jpg") no-repeat;
     background-size: cover;
-    width: calc(49%-5px);
+    
   }
 
   .trend-list {
@@ -655,11 +640,11 @@ body {
   padding-right: 2%;
 }
 
-/* .main-block {
+.main-block {
   display: flex;
   align-items: flex-start;
   margin-bottom: 60px;
-} */
+}
 
 .main-block-img {
   display: inline-block;
@@ -861,7 +846,7 @@ position: relative;
   top: 0;
   right: 0;
   border: 2px solid #b59f5b;
-  background-image: url("/svg/search.svg");
+  background-image: url("../svg/search.svg");
   background-repeat: no-repeat;
   background-size: 18px;
   background-position: center center;
@@ -981,23 +966,23 @@ border-bottom: 1px solid #eeeeee;
   }
     
   .twitter {
-    background-image: url("/svg/004-twitter.svg");
+    background-image: url("../svg/004-twitter.svg");
   }
       
   .pinterest {
-    background-image: url("/svg/001-pinterest.svg");
+    background-image: url("../svg/001-pinterest.svg");
   }
 
   .facebook {
-    background-image: url("/svg/002-facebook-logo.svg");
+    background-image: url("../svg/002-facebook-logo.svg");
   }
   
   .instagram {
-    background-image: url("/svg/005-instagram.svg");
+    background-image: url("../svg/005-instagram.svg");
   }
 
   .tumblr {
-    background-image: url("/svg/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
   }
 
   .socials-link-text, .visually-hidden {
@@ -1142,14 +1127,13 @@ border-bottom: 1px solid #eeeeee;
        
   .popup_hidden {
     display: none;
-      /* display: flex; */
+    /* display: flex;  */
     width: 100%;
     height: 100%;
     box-sizing: border-box;
           
     background-color: rgba(0, 0, 0, 0.75);
-    overflow-y: auto;
-    
+        
     position: fixed;
     top: 0;
     left: 0;
@@ -1205,7 +1189,7 @@ border-bottom: 1px solid #eeeeee;
     
     
   .select-group1 {	
-    background-image: url("/svg/form-arrows.svg");
+    background-image: url("../svg/form-arrows.svg");
     background-size: 15px;
     background-repeat: no-repeat;
     background-position: right 5px  center;
@@ -1219,7 +1203,7 @@ border-bottom: 1px solid #eeeeee;
   }
     
       
-  .form-group:nth-child(n+2) {
+  .form-group:nth-child(n+1) {
     margin-bottom: 30px;
   }
 
@@ -1270,7 +1254,7 @@ border-bottom: 1px solid #eeeeee;
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("/svg/form-empty-circle.svg");
+    background-image: url("../svg/form-empty-circle.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
@@ -1281,7 +1265,7 @@ border-bottom: 1px solid #eeeeee;
   }
     
   .field:checked ~ .radio-group-text::before  {
-    background-image: url("/svg/form-circle.svg");
+    background-image: url("../svg/form-circle.svg");
   }
        
   .field-group2[type=radio] {
@@ -1290,7 +1274,10 @@ border-bottom: 1px solid #eeeeee;
     
        
   .group3 {
-    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    max-width: 390px;
+    min-width: 390px;
     font-size: 1rem;
     font-weight: 400;
     font-family: "OpenSans-Regular";
