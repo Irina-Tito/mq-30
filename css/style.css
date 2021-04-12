@@ -1,13 +1,13 @@
 @font-face {
     font-family: "OpenSans-Regular";
-    src: url("/fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff");
     font-weight: 400;
     font-style: normal;
     }
 
 @font-face {
     font-family: "OpenSans-Bold";
-    src: url("/fonts/OpenSans-Bold.woff2");
+    src: url("../fonts/OpenSans-Bold.woff2");
     font-weight: 700;
     font-style: normal;
     }
@@ -42,6 +42,7 @@ body {
   .title {
     font-size: 45px;
     line-height: 75px;
+
   }
   
   .trends {
@@ -244,6 +245,7 @@ body {
   .title {
     font-size: 45px;
     line-height: 75px;
+
   }
 
   .product__title {
@@ -423,6 +425,7 @@ body {
     .title {
       font-size: 26px;
       line-height: 36px;
+    
     }
 
     .product__title {
@@ -539,7 +542,10 @@ body {
   text-align: center;
   text-transform: uppercase;
   max-width: 1160px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 6%;
 }
 
@@ -672,7 +678,7 @@ body {
 .news {
   font-size: 14px;
   color: #b59f5b;
-  font-family: OpenSans-Bold;
+  font-family: "OpenSans-Bold";
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
@@ -690,7 +696,7 @@ body {
 
 .main-block-text-t {
   font-weight: 700;
-  font-family: OpenSans-Bold;
+  font-family: "OpenSans-Bold";
   text-transform: uppercase;
  }
 
@@ -712,7 +718,7 @@ body {
 .main-block-author{
   color: #000000;
   font-weight: 700;
-  font-family: OpenSans-Bold;
+  font-family: "OpenSans-Bold";
 }
 
 
@@ -831,7 +837,7 @@ position: relative;
   line-height: 18px;
   color: #000000;
   font-weight: 700;
-  font-family: OpenSans-Bold;
+  font-family: "OpenSans-Bold";
 
   opacity: 0.54;
 }
@@ -911,7 +917,7 @@ border-bottom: 1px solid #eeeeee;
   line-height: 47px;
   color: #000000;
   font-weight: 700;
-  font-family: OpenSans-Bold;
+  font-family: "OpenSans-Bold";
 }
   
 .categories-number {
@@ -920,7 +926,7 @@ border-bottom: 1px solid #eeeeee;
   color: #b59f5b;
   font-weight: 700;
   margin-left: 5px;
-  font-family: OpenSans-Bold;
+  font-family: "OpenSans-Bold";
       
 }
           
