@@ -95,6 +95,10 @@ body {
       
   } 
 
+  .main-block{
+  padding-right: 8%;
+  }
+
   .main-block-news{
     font-size: 15px;
     line-height: 22px;
@@ -194,16 +198,17 @@ body {
   .main-block {
     flex-direction: column;
     box-sizing: border-box;
-    width: 381px;
-    /* это чтобы текст не сьезжал по ширине относительно картинки 381px */
     border-bottom: #8d1919 solid 1px;
-        
+                
   }
 
-  .main-post, .aside-block {
-    margin-right: 1%;
-    padding-left: 1%;
+  .main-post {
+   padding-left: 8%;
     
+  }
+  .aside-block {
+    margin-left: 2%;
+    padding-right: 8%;
   }
 
   .main-block-news{
@@ -379,11 +384,15 @@ body {
 
   .main-block {
     flex-direction: column;
-    max-width: 350px;
-    min-width: 320px;
-   
     margin-left: auto;
     margin-right: auto;
+    border-bottom: #8d1919 solid 1px;
+  }
+
+  .main-post {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
   }
   
   .main-block-news{
@@ -415,6 +424,11 @@ body {
   .aside-block {
     width: 100%;
   
+  }
+
+    
+  .product {
+    width: 100%;
   }
 
     .products {
@@ -640,9 +654,7 @@ body {
 
 .main-post {
   flex: 1;
-  margin-right: 8%;
   box-sizing: border-box;
-  padding-left: 2%;
   padding-right: 2%;
 }
 
@@ -655,9 +667,11 @@ body {
 .main-block-img {
   display: inline-block;
   margin: 5px 30px 0px 0px;
-  max-width: 100%;
+  max-width: 385px;
+  
   height: 100%;
   background-color: #f4f7f6;
+
     
 }
      
@@ -1133,7 +1147,7 @@ border-bottom: 1px solid #eeeeee;
        
   .popup_hidden {
     display: none;
-    /* display: flex;  */
+     /* display: flex;  */
     width: 100%;
     height: 100%;
     box-sizing: border-box;
@@ -1147,10 +1161,10 @@ border-bottom: 1px solid #eeeeee;
   }
   
   .popup__container {
-    display: none;
+    display: none; 
     width: 390px;
     min-width: 300px;
-    margin: 10vh auto 0;
+    margin: auto;
     padding: 4% 4%;
     height: 580px;
     background-color: #ffffff;
